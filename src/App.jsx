@@ -18,7 +18,7 @@ function App() {
 
   // Fetch product list centrally so we can search by ID for detail page views
   useEffect(() => {
-    fetch('http://localhost:8080/api/products')
+    fetch('https://ecommerce-backend-f9ud.onrender.com/api/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("Error setting products context:", err));

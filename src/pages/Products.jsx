@@ -11,8 +11,8 @@ function Products({ addToCart, onViewDetails }) {
   useEffect(() => {
     setLoading(true);
     const url = selectedCategory && selectedCategory !== 'All'
-      ? `http://localhost:8080/api/products?category=${selectedCategory}`
-      : 'http://localhost:8080/api/products';
+      ? `https://ecommerce-backend-f9ud.onrender.com/api/products?category=${selectedCategory}`
+      : 'https://ecommerce-backend-f9ud.onrender.com/api/products';
 
     fetch(url)
       .then(res => res.json())
